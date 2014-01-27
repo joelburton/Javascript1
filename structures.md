@@ -45,7 +45,12 @@ console.log(anotherEmptyVariable)
 
 var iHateCats = false;
 var catsAreAwesome = true;
+```
 
+==More Complex Structures==
+===Arrays===
+
+```javascript
 //Lists (are called arrays in Javascript)
 
 var listOfMuppets = ["Kermit", "Dr. Teeth", "Gonzo", "Animal"];
@@ -61,7 +66,11 @@ listOfMuppets.length;
 fibs.length;
 // would output 9
 
+```
 
+===Objects===
+
+```javascript
 //Dictionaries (are called objects in Javascript (which is terrible))
 var lonLonRanch = {
 	cuccos : 100,
@@ -106,3 +115,9 @@ var enterprise = {
 
 enterprise.warp("2, 3, mark 5", 8)
 //"Heading bearing 2, 3 mark 5 at Warp Factor 8";
+
+```
+
+Python Structures
+=================
+

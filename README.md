@@ -3,7 +3,7 @@ Introduction to Javascript
 
 Javascript Ex01
 
-Translate this python exercise into a JS equivalent.
+Translate this python exercise into the equivilant in JavaScript
 
 ```
 from random import randint

@@ -28,6 +28,7 @@ var aString = "cats";
 var phrase = "I have " + aFloatingPointNumber + " " + aString;
 // I have 5.5 cats.
 // (what do you suppose happened there)
+//Also note, no string interpolation in JavaScript
 
 //Empty types
 
@@ -65,6 +66,8 @@ listOfMuppets.length;
 // would output 4
 fibs.length;
 // would output 9
+
+## todo show list slicing in JS
 
 ```
 
@@ -121,3 +124,141 @@ enterprise.warp("2, 3, mark 5", 8)
 Python Structures
 =================
 
+==Data Types==
+```python
+# Single Line Comment
+""" 
+Multi Line Comment
+"""
+
+#Variables
+a_variable
+
+# Numbers
+a_number = 5
+# Floating point behaves the same
+a_floating_point_number = 5.5
+
+#Strings
+a_string = "cats"
+
+# turning a number into a string, also concatenation
+
+phrase = "I have " + a_floating_point_number + " " + a_string
+#  I have 5.5 cats.
+#  We can interpolate in python though
+phrase = "I have %d %s" % a_floating_point_number, a_string
+
+
+# Empty types
+## Python doesn't have a "null" - it has "None"
+empty_on_purpose = None
+
+## But it does not have an "undefined". If something is undefined:
+>>> print empty_because_I_never_declared_it
+
+# We're going to get a NameError because python doesn't automatically handle it for us:
+"""
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'empty_because_I_never_declared_it' is not defined
+"""
+
+
+# Boolean (true / false) values - Same but with caps
+
+i_hate_cats = False
+cats_are_awesome = True
+```
+
+==More Complex Structures==
+===Arrays===
+
+```python
+# Lists
+
+list_of_muppets = ["Kermit", "Dr. Teeth", "Gonzo", "Animal"]
+fibs = [1,1,2,3,5,8,13,21,34]
+
+# Lists are just as powerful in Python
+multiTypeArray = ["things", 5, ["teeth"], {cats: 5, cucco: 2, }]
+
+# Length is a function called len()
+
+len(listOfMuppets)
+#  would output 4
+len(fibs)
+#  would output 9
+
+##todo add list slices
+
+```
+
+===Dictionaries===
+
+```python
+# Dictionaries (key-value in curly braces) - has to have quotes
+lon_lon_ranch = {
+	"cuccos" : 100,
+	"horses" : 5,
+	"eponas" : 1,
+	"cows" : 5,
+	"crazyOwners" : 1
+}
+
+# And you can only access it this way
+print lon_lon_ranch["cuccos"]
+# Would write : 100
+
+
+
+# You can put quotes, especially if you need spaces:
+links_adventures = {
+	"The Legend Of Zelda" : "NES",
+	"Zelda 2: The Adventure of Link" : "NES",
+	"The Legend Of Zelda: A Link to the Past" : "SNES"
+}
+
+# You can do some sneaky extra stuff in python because of the .keys() and the .values(): 
+print "My experience on the " + " and the ".join(set(links_adventures.values())) + " can be summed up as: " + " followed by ".join(links_adventures.keys())
+
+## (Explanation left as exercise to the reader, as a bonus)
+
+# Dictionaries in Python ( we're still talking about -> {} ) can still contain functions, but the practice is a little different:
+
+def print_crew():
+	print "Capitan Jean Luc Picard is the only crew you need to know about."
+
+def warp(bearing, warpFactor):
+	print "Heading bearing " + bearing + " at Warp Factor " + warpFactor
+enterprise = {
+	"print_crew": print_crew, 
+	"warp": warp,
+	"designation": "NCC-1701-D",
+	"crew_complement": 1014
+}
+# But you're really just storing a reference to the function as a value in the dict.
+
+enterprise["warp"]("2, 3, mark 5", 8)
+# "Heading bearing 2, 3 mark 5 at Warp Factor 8";
+
+It's best to use a class here:
+
+class StarShip()
+	__init__(self,name, designation, crew_complement):
+		self.name = name
+		self.name = designation
+		self.name = crew_complement
+
+	def print_crew():
+		print "Starships can have arbitrary crew, depends on the class of vessel"
+
+	def warp(bearing, warpFactor):
+		print "Heading bearing " + bearing + " at Warp Factor " + warpFactor
+
+enterprise = StarShip("enterprise", "NCC-1701-D", "1014")
+
+enterprise.warp("5, 7 mark 8", 5)
+print "Make it so."
+
+```

@@ -63,7 +63,7 @@ var multiTypeArray = ["things", 5, ["teeth"], {cats: 5, cucco: 2}];
 //Length is a property on arrays
 
 listOfMuppets.length;
-// would output 4
+// would output 7
 fibs.length;
 // would output 9
 
@@ -198,7 +198,7 @@ multi_type_array = ["things", 5, ["teeth"], {cats: 5, cucco: 2}]
 # Length is a function called len()
 
 len(list_of_muppets)
-#  would output 4
+#  would output 7
 len(fibs)
 #  would output 9
 

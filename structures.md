@@ -1,7 +1,7 @@
 Javascript Data Structures
 ==========================
 
-==Data Types==
+## Data Types
 ```javascript
 //comments look like this
 
@@ -48,17 +48,17 @@ var iHateCats = false;
 var catsAreAwesome = true;
 ```
 
-==More Complex Structures==
-===Arrays===
+## More Complex Structures  
+### Arrays  
 
 ```javascript
 //Lists (are called arrays in Javascript)
 
-var listOfMuppets = ["Kermit", "Dr. Teeth", "Gonzo", "Animal"];
+var listOfMuppets = ["Kermit", "Dr. Teeth", "Gonzo","Fozzie", "Animal", "Statler", "Waldorf"];
 var fibs = [1,1,2,3,5,8,13,21,34];
 
 //Arrays are complex, and contain multitudes (of types)
-var multiTypeArray = ["things", 5, ["teeth"], {cats: 5, cucco: 2, }];
+var multiTypeArray = ["things", 5, ["teeth"], {cats: 5, cucco: 2}];
 
 //Length is a property on arrays
 
@@ -67,11 +67,21 @@ listOfMuppets.length;
 fibs.length;
 // would output 9
 
-## todo show list slicing in JS
+//List Slicing
+
+//All the muppets that play instruments
+var musicalMuppets = listOfMuppets.slice(0,5)
+
+//All the muppets that are jerks
+var criticalMuppets = listOfMuppets.slice(-2)
+
+//All the muppets that aren't fozzie
+var funnyMuppets = listOfMuppets.slice(0,3).concat(listOfMuppets.slice(4))
+//The slice function doesn't take an iteration argument, wakka wakka wakka!
 
 ```
 
-===Objects===
+### Objects  
 
 ```javascript
 //Dictionaries (are called objects in Javascript (which is terrible))
@@ -124,14 +134,16 @@ enterprise.warp("2, 3, mark 5", 8)
 Python Structures
 =================
 
-==Data Types==
+## Data Types
 ```python
+
 # Single Line Comment
+
 """ 
 Multi Line Comment
 """
 
-#Variables
+# Variables
 a_variable
 
 # Numbers
@@ -171,30 +183,43 @@ i_hate_cats = False
 cats_are_awesome = True
 ```
 
-==More Complex Structures==
-===Arrays===
+## More Complex Structures  
+### Arrays
 
 ```python
 # Lists
 
-list_of_muppets = ["Kermit", "Dr. Teeth", "Gonzo", "Animal"]
+list_of_muppets = ["Kermit", "Dr. Teeth", "Gonzo","Fozzie", "Animal", "Statler", "Waldorf"]
 fibs = [1,1,2,3,5,8,13,21,34]
 
 # Lists are just as powerful in Python
-multiTypeArray = ["things", 5, ["teeth"], {cats: 5, cucco: 2, }]
+multi_type_array = ["things", 5, ["teeth"], {cats: 5, cucco: 2}]
 
 # Length is a function called len()
 
-len(listOfMuppets)
+len(list_of_muppets)
 #  would output 4
 len(fibs)
 #  would output 9
 
-##todo add list slices
+# List Slicing
+
+# All the muppets that play instruments
+musical_muppets = list_of_muppets[0:5]
+
+# All the muppets that are jerks
+critical_muppets = list_of_muppets[-2:]
+
+# All the muppets that aren't fozzie
+funny_muppets = list_of_muppets[0:3].append(list_of_muppets[4:]))
+
+#Poor fozzie, at least python has iteration though!
+
+short_muppets = list_of_muppets[::2]
 
 ```
 
-===Dictionaries===
+### Dictionaries  
 
 ```python
 # Dictionaries (key-value in curly braces) - has to have quotes

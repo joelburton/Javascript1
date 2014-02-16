@@ -51,9 +51,11 @@ var catsAreAwesome = true;
 ## More Complex Structures  
 ### Arrays  
 
+An array literal looks like this: `[]`  
+
 ```javascript
 //Lists (are called arrays in Javascript)
-
+  
 var listOfMuppets = ["Kermit", "Dr. Teeth", "Gonzo","Fozzie", "Animal", "Statler", "Waldorf"];
 var fibs = [1,1,2,3,5,8,13,21,34];
 
@@ -82,6 +84,8 @@ var funnyMuppets = listOfMuppets.slice(0,3).concat(listOfMuppets.slice(4))
 ```
 
 ### Objects  
+
+An object literal looks like this: `{}`
 
 ```javascript
 //Dictionaries (are called objects in Javascript (which is terrible))
@@ -186,6 +190,8 @@ cats_are_awesome = True
 ## More Complex Structures  
 ### Arrays
 
+List literal: `[]`
+
 ```python
 # Lists
 
@@ -220,6 +226,8 @@ short_muppets = list_of_muppets[::2]
 ```
 
 ### Dictionaries  
+
+Dictionary literal: `{}`
 
 ```python
 # Dictionaries (key-value in curly braces) - has to have quotes

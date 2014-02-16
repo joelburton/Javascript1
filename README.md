@@ -7,9 +7,9 @@ Javascript Ex02 - Sum of even-termed Fibonacci numbers
 
 Javascript Ex03 - Duplicates
 
-Javascript Ex04 - Basic Reading List
+Javascript Ex04 - Your Command-line Pal That's Fun To Be With
 
-Javascript Ex05 - CLIC
+Javascript Ex05 - Advanced Reading List
 
 Javascript Skills01 - Callback hell
 

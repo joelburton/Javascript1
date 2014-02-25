@@ -7,6 +7,7 @@ Introduction to Javascript
 [Data Strctures in Javascript](https://github.com/hackbrightacademy/Javascript1/blob/master/structures.md)
 
 
+###Exercises###
 
 Javascript Ex01 - [Sum of multiples of 3 and 5 under 1000](https://github.com/hackbrightacademy/Javascript1/blob/master/ex01.md)
 

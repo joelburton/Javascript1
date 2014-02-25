@@ -1,7 +1,7 @@
 Javascript Loops
 ================
 
-==While==
+###While###
 
 ```javascript
 var x = 0;
@@ -11,7 +11,7 @@ while (x < 5) {
 }
 ```
 
-==For==
+###For###
 
 ```javascript
 var myLotteryNumbers = [4,8,15,16,23,42];
@@ -22,7 +22,7 @@ print "I win the lottery!"
 
 ```
 
-==For In==
+###For In###
 
 ```javascript
 //this is an object
@@ -44,7 +44,7 @@ console.log("Who was our mystery actor?")
 Python Loops
 ============
 
-==While==
+###While###
 
 ```python
 x = 0
@@ -54,7 +54,7 @@ while x < 5:
 
 ```
 
-==For==
+###For###
 
 ```python
 my_lottery_numbers = [4,8,15,16,23,42]
@@ -65,7 +65,7 @@ print "I win the lottery!"
 
 ```
 
-==For In==
+###For In###
 
 ```python
 ## this is a dictionary

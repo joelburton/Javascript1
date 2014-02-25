@@ -1,7 +1,7 @@
 Introduction to Javascript
 ==========================
 
-###Translations###
+###Python - To - Javascript Dictionary###
 [Conditionals in Javascript](https://github.com/hackbrightacademy/Javascript1/blob/master/if-else-elif.md)  
 [Loops in Javascript](https://github.com/hackbrightacademy/Javascript1/blob/master/loops.md)  
 [Data Strctures in Javascript](https://github.com/hackbrightacademy/Javascript1/blob/master/structures.md)  

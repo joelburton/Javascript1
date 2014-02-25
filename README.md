@@ -1,20 +1,16 @@
 Introduction to Javascript
 ==========================
 
-Javascript Ex01 - Sum of multiples of 3 and 5 under 1000
+Javascript Ex01 - [Sum of multiples of 3 and 5 under 1000](https://github.com/hackbrightacademy/Javascript1/blob/master/ex01.md)
 
-Javascript Ex02 - Sum of even-termed Fibonacci numbers
+Javascript Ex02 - [Sum of even-termed Fibonacci numbers](https://github.com/hackbrightacademy/Javascript1/blob/master/ex02.md)
 
-Javascript Ex03 - Duplicates
+Javascript Ex03 - [Duplicates](https://github.com/hackbrightacademy/Javascript1/blob/master/ex03.md)
 
-Javascript Ex04 - Your Command-line Pal That's Fun To Be With
+Javascript Ex04 - [Your Command-line Pal That's Fun To Be With](https://github.com/hackbrightacademy/Javascript1/blob/master/ex04.md)
 
-Javascript Ex05 - Advanced Reading List
+Javascript Ex05 - [Advanced Reading List](https://github.com/hackbrightacademy/Javascript1/blob/master/ex05.md)
 
-Javascript Skills01 - Callback hell
 
-Javascript Skills02 - 
-
-Javascript Skills03 - 
 
 

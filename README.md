@@ -18,7 +18,7 @@ Javascript Ex03 - [Duplicates](https://github.com/hackbrightacademy/Javascript1/
 
 Javascript Ex04 - [Your Command-line Pal That's Fun To Be With](https://github.com/hackbrightacademy/Javascript1/blob/master/ex04.md)
 
-Javascript Ex05 - [Advanced Reading List](https://github.com/hackbrightacademy/Javascript1/blob/master/ex05.md)
+Javascript Ex05 (Advanced || Optional)- [Advanced Reading List](https://github.com/hackbrightacademy/Javascript1/blob/master/ex05.md)
 
 
 

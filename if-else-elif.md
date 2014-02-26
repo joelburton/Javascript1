@@ -5,7 +5,7 @@ JavaScript Conditionals
 var age = 40;
 if (age > 35) {
 	console.log("You can hold any public office!");
-} elif (age < 35 && age > 30) {
+} else if (age < 35 && age > 30) {
 	console.log("You can run for Senate!");
 } else if (age < 30 && age > 25) {
 	console.log("You can run for a Representative seat!");
@@ -33,7 +33,7 @@ elif age < 25 and age > 21:
 	print "You can run for some forms of public office!"
 elif age < 21 and age > 18:
 	print "You can't drink or run for office but you can go to war!"
-else
+else:
 	print "You have no voice as a citizen!"
 
 ```

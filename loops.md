@@ -18,7 +18,7 @@ var myLotteryNumbers = [4,8,15,16,23,42];
 for (var i=0; i < myLotteryNumbers.length; i++){
 	console.log("The next winning number is:" + myLotteryNumbers[i]);
 }
-print "I win the lottery!"
+console.log("I win the lottery!");
 
 ```
 
@@ -32,13 +32,13 @@ var mysteryActor = {
 	"The Prestige" : "Nikola Tesla",
 	"Arthur and the Invisibles" : "Emperor Maltazard",
 	"SpongeBob SquarePants" : "L.R.H"
-}
+};
 
 for (var movie in mysteryActor) {
 	console.log("Our mystery actor appeared in " + movie + " as " + mysteryActor[movie] + ".")
 }
 
-console.log("Who was our mystery actor?")
+console.log("Who was our mystery actor?");
 ```
 
 Python Loops
@@ -77,8 +77,8 @@ mystery_actor = {
 	"SpongeBob SquarePants" : "L.R.H"
 }
 
-for movie in mystery_actor
-	print "Our mystery actor appeared in %s as %s." % movie, mystery_actor[movie])
+for movie in mystery_actor:
+	print "Our mystery actor appeared in %s as %s." % (movie, mystery_actor[movie])
 
 print "Who was our mystery actor?"
 ```

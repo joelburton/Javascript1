@@ -1,4 +1,3 @@
-
 Javascript Functions
 ====================
 
@@ -45,6 +44,28 @@ undefined
 'A function that prints hello'
 ```
 
+In Javascript, we can pass functions to other functions as arguments. This is a pretty neat trick, considering we have anonymous functions that can be defined in-place. Check this out:
+
+```javascript
+
+function batman(exclamation){
+	console.log("NaNaNaNaNaNaNaNa");
+	exclamation();
+}
+
+//And then, we can pass a function we have previously declared
+function obvious(){
+	console.log("Batman!");
+}
+
+batman(obvious);
+
+//OR we can declare the function right there:
+
+batman(function(){ 
+	console.log("CAT MAN!");
+});
+```
 
 Python Functions
 ================

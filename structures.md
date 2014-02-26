@@ -199,7 +199,7 @@ list_of_muppets = ["Kermit", "Dr. Teeth", "Gonzo","Fozzie", "Animal", "Statler",
 fibs = [1,1,2,3,5,8,13,21,34]
 
 # Lists are just as powerful in Python
-multi_type_array = ["things", 5, ["teeth"], {cats: 5, cucco: 2}]
+multi_type_array = ["things", 5, ["teeth"], {"cats": 5, "cucco": 2}]
 
 # Length is a function called len()
 
@@ -217,7 +217,7 @@ musical_muppets = list_of_muppets[0:5]
 critical_muppets = list_of_muppets[-2:]
 
 # All the muppets that aren't fozzie
-funny_muppets = list_of_muppets[0:3].append(list_of_muppets[4:]))
+funny_muppets = list_of_muppets[0:3].extend(list_of_muppets[4:])
 
 #Poor fozzie, at least python has iteration though!
 
@@ -263,7 +263,8 @@ def print_crew():
 	print "Capitan Jean Luc Picard is the only crew you need to know about."
 
 def warp(bearing, warpFactor):
-	print "Heading bearing " + bearing + " at Warp Factor " + warpFactor
+	print "Heading bearing " + str(bearing) + " at Warp Factor " + str(warpFactor)
+	
 enterprise = {
 	"print_crew": print_crew, 
 	"warp": warp,
@@ -275,18 +276,18 @@ enterprise = {
 enterprise["warp"]("2, 3, mark 5", 8)
 # "Heading bearing 2, 3 mark 5 at Warp Factor 8";
 
-It's best to use a class here:
+#It's best to use a class here:
 
-class StarShip()
-	__init__(self,name, designation, crew_complement):
+class StarShip():
+	def __init__(self,name, designation, crew_complement):
 		self.name = name
-		self.name = designation
-		self.name = crew_complement
+		self.designation = designation
+		self.crew_complement = crew_complement
 
-	def print_crew():
+	def print_crew(self):
 		print "Starships can have arbitrary crew, depends on the class of vessel"
 
-	def warp(bearing, warpFactor):
+	def warp(self, bearing, warpFactor):
 		print "Heading bearing " + bearing + " at Warp Factor " + warpFactor
 
 enterprise = StarShip("enterprise", "NCC-1701-D", "1014")

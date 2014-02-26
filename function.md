@@ -82,3 +82,20 @@ print a_function_is_just_a_variable_that_contains_code
 
 ```
 Python doesn't contain function literals, just functions declared the normal way. You can use them like they're variables though.
+
+In Javascript, we can pass functions to other functions as arguments. This is a pretty neat trick, considering we have anonymous functions that can be defined in-place. Check this out:
+
+```python
+
+def batman(exclamation):
+	print "NaNaNaNaNaNaNaNa" 
+	exclamation()
+
+##And then, we can pass a function we have previously declared
+def obvious():
+	print "Batman!"
+
+batman(obvious)
+
+## But! We can't declare functions in place. So, no dice, CAT MAN.
+```

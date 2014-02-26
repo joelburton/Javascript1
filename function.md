@@ -1,5 +1,4 @@
 
-
 Javascript Functions
 ====================
 
@@ -9,7 +8,7 @@ function aFunctionThatAddsAndReturnsTheValue(first, second) {
 	return first + second;
 }
 
-aFunctionThatAddsAndReturnsTheValue(5,10)
+aFunctionThatAddsAndReturnsTheValue(5,10);
 ```
 
 A function is really just a variable that contains code, so we can use another syntax to declare a function.  
@@ -30,19 +29,19 @@ Whenever you see `function(){}` - this is called a function literal. We can put 
 Javascript functions are special though, because they're secretly **objects** underneath.  
 
 ```
-> function myFn() {console.log("hello")}
+> function myFn() {console.log("hello")};
 undefined
-> myFn()
+> myFn();
 hello
 undefined
-> myFn.description = "A function that prints hello"
+> myFn.description = "A function that prints hello";
 'A function that prints hello'
 > myFn
-{ [Function: myFn] description: 'A function that prints hello' }
-> myFn()
+{ [Function: myFn] description: 'A function that prints hello' };
+> myFn();
 hello
 undefined
-> myFn.description
+> myFn.description;
 'A function that prints hello'
 ```
 

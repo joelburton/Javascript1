@@ -9,8 +9,7 @@ Introduction to Javascript
 
 ### Running your code
 
-For these exercises, you'll need to run your javascript files using the node.js binary.  This is similar to how we ran python files in the past. Just run `node file.js` and look for the output.
-
+For these exercises, you'll need to run your javascript files using website http://repl.it/languages/JavaScript.
 
 ###Exercises###
 
@@ -23,16 +22,5 @@ Javascript Ex03 - [Duplicates](https://github.com/hackbrightacademy/Javascript1/
 Javascript Ex04 - [Your Command-line Pal That's Fun To Be With](https://github.com/hackbrightacademy/Javascript1/blob/master/ex04.md)
 
 Javascript Ex05 - [Advanced Reading List](https://github.com/hackbrightacademy/Javascript1/blob/master/ex05.md)
-
-
-### Doing these at home
-
-Most operating systems don't come with node.js installed by default. You'll need to install node.js to run these files from your command line. Just go to http://nodejs.org/download and download the installer appropriate for your computer.
-
-Once this is done, run `node --version` to ensure node was setup correctly.
-
-
-
-
 
 

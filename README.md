@@ -27,7 +27,7 @@ Javascript Ex05 - [Advanced Reading List](https://github.com/hackbrightacademy/J
 
 ### Doing these at home
 
-Most operating systems don't come with node.js installed by default. You'll need to install node.js to run these files from your command line. If you're on OSX and have homebrew installed, just run `brew install node` to get everything setup. If you don't have a mac or homebrew, go to nodejs.org and download the installer.
+Most operating systems don't come with node.js installed by default. You'll need to install node.js to run these files from your command line. Just go to http://nodejs.org/download and download the installer appropriate for your computer.
 
 Once this is done, run `node --version` to ensure node was setup correctly.
 

@@ -85,7 +85,73 @@
 	<span id="awesome-box" class="hidden">AWESOME</span>
 
 	<script type="text/javascript">
-	
+	function clickHandlerText(e)
+	{
+		e.preventDefault();
+		document.getElementById("text-box-replace").innerHTML = 'world';
+	}
+
+	function clickHandlerColor(e)
+	{
+		e.preventDefault();
+		document.getElementById("text-box-color").innerHTML = 'I am the color red!';
+		document.getElementById("text-box-color").style.backgroundColor = 'red';
+	}
+
+	function clickHandlerMelon(e)
+	{
+		e.preventDefault();
+		document.getElementById("melon-box").innerHTML = '<img src="https://lh3.googleusercontent.com/-LzmPKWFoahg/AAAAAAAAAAI/AAAAAAAAAA8/C9z7a9ToyL4/photo.jpg" />';
+	}
+
+	function clickHandlerAwesome(e)
+	{
+		e.preventDefault();
+		toggleDiv();
+		animateDiv("right");
+	}
+
+	function toggleDiv()
+	{
+		var awesomeBox = document.getElementById("awesome-box");
+		awesomeBox.classList.toggle("hidden");
+		setTimeout(toggleDiv, 500);
+	}
+
+	function animateDiv(direction)
+	{
+		var awesomeBox = document.getElementById("awesome-box");
+		var left = parseInt(getComputedStyle(awesomeBox).left,10);
+		if (direction == "right" && left < 500)
+		{
+			awesomeBox.style.left = left + 4 + 'px';
+		}
+		else if (left >= 0)
+		{
+			direction = "left";
+			awesomeBox.style.left = left - 4 + 'px';
+		}
+		else
+		{
+			awesomeBox.style.left = left + 4 + 'px';
+			direction = "right";
+		}
+
+		setTimeout(function(){animateDiv(direction)}, 50);
+	}
+
+	var text = document.getElementById("get-text");
+	text.addEventListener('click', clickHandlerText);
+
+	var color = document.getElementById("get-color");
+	color.addEventListener('click', clickHandlerColor);
+
+	var melon = document.getElementById("get-melon");
+	melon.addEventListener('click', clickHandlerMelon);
+
+	var awesome = document.getElementById("be-awesome");
+	awesome.addEventListener('click', clickHandlerAwesome);
+
 	</script>
 
 </body>

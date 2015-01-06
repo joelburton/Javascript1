@@ -2,6 +2,8 @@ Introduction to Javascript
 ==========================
 
 ###Python-To-Javascript Dictionary###
+Some reference material to help you compare Python and JavaScript.
+
 [Conditionals in Javascript](https://github.com/hackbrightacademy/Javascript1/blob/master/if-else-elif.md)  
 [Loops in Javascript](https://github.com/hackbrightacademy/Javascript1/blob/master/loops.md)  
 [Data Structures in Javascript](https://github.com/hackbrightacademy/Javascript1/blob/master/structures.md)  

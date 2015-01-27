@@ -27,8 +27,8 @@ var alsoAddsTwoNumbers = function (first, second) {
 };
 ```
 
-(note that there is a semicolon at the end of an assignment like this--after all,
-this is not all that different than 'var i = 7;', except with a function as
+(note that there is a semicolon at the end of an assignment like this—after all,
+this is not all that different than `var i = 7;`, except with a function as
 the things-we're-assigning-to-the-variable.)
 
 Both of these create functions that do the same thing, so it's often a matter of

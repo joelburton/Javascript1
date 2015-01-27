@@ -2,6 +2,7 @@ Introduction to Javascript
 ==========================
 
 ###Python-To-Javascript Dictionary###
+
 Some reference material to help you compare Python and JavaScript.
 
 [Conditionals in Javascript](https://github.com/hackbrightacademy/Javascript1/blob/master/if-else-elif.md)  
@@ -19,7 +20,7 @@ You can create a basic HTML page with a Javascript section, and do your coding i
 This could look like:
 
 ```html
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
   <title>Javascript Learning</title>
@@ -33,7 +34,7 @@ This could look like:
 </html>
 ```
 
-(if you do this, you'll need to show the Javascript console to see what you print to it—you
+(If you do this, you'll need to show the Javascript console to see what you print to it—you
 can do that in Chrome with the `View`/`Developer` menu.)
 
 #### In an online Javascript editor/runner

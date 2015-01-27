@@ -14,8 +14,8 @@ while (x < 5) {
 ###For###
 
 ```javascript
-var myLotteryNumbers = [4,8,15,16,23,42];
-for (var i=0; i < myLotteryNumbers.length; i++){
+var myLotteryNumbers = [4, 8, 15, 16, 23, 42];
+for (var i = 0; i < myLotteryNumbers.length; i++) {
 	console.log("The next winning number is:" + myLotteryNumbers[i]);
 }
 console.log("I win the lottery!");
@@ -25,13 +25,13 @@ console.log("I win the lottery!");
 ###For In###
 
 ```javascript
-//this is an object
+// This is an object, not an array!
 var mysteryActor = {
-	"Labyrinth" : "Jareth the Goblin King",
-	"Basquiat" : "Andy Warhol",
-	"The Prestige" : "Nikola Tesla",
-	"Arthur and the Invisibles" : "Emperor Maltazard",
-	"SpongeBob SquarePants" : "L.R.H"
+	"Labyrinth": "Jareth the Goblin King",
+	"Basquiat": "Andy Warhol",
+	"The Prestige": "Nikola Tesla",
+	"Arthur and the Invisibles": "Emperor Maltazard",
+	"SpongeBob SquarePants": "L.R.H"
 };
 
 for (var movie in mysteryActor) {
@@ -57,9 +57,9 @@ while x < 5:
 ###For###
 
 ```python
-my_lottery_numbers = [4,8,15,16,23,42]
+my_lottery_numbers = [4, 8, 15, 16, 23, 42]
 for number in my_lottery_numbers:
-	print "The next winning number is: %d" % number
+	print "The next winning number is:", number
 
 print "I win the lottery!"
 
@@ -68,17 +68,22 @@ print "I win the lottery!"
 ###For In###
 
 ```python
-## this is a dictionary
+## Using lists we get from dictionaries:
 mystery_actor = {
-	"Labyrinth" : "Jareth the Goblin King",
-	"Basquiat" : "Andy Warhol",
-	"The Prestige" : "Nikola Tesla",
-	"Arthur and the Invisibles" : "Emperor Maltazard",
-	"SpongeBob SquarePants" : "L.R.H"
+	"Labyrinth": "Jareth the Goblin King",
+	"Basquiat": "Andy Warhol",
+	"The Prestige": "Nikola Tesla",
+	"Arthur and the Invisibles": "Emperor Maltazard",
+	"SpongeBob SquarePants": "L.R.H"
 }
 
 for movie in mystery_actor:
 	print "Our mystery actor appeared in %s as %s." % (movie, mystery_actor[movie])
 
 print "Who was our mystery actor?"
+
+# (or, alternately)
+
+for movie, role in mystery_actor.items():
+    print "Our mystery actor appeared in %s as %s." % (movie, role)
 ```

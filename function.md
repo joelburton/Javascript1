@@ -1,50 +1,48 @@
 Javascript Functions
 ====================
 
+We can make functions in Javascript using "function declarations", like this:
+
 ```javascript
 
-function aFunctionThatAddsAndReturnsTheValue(first, second) {
+function addTwoNumbers(first, second) {
 	return first + second;
 }
-
-aFunctionThatAddsAndReturnsTheValue(5,10);
 ```
 
-A function is really just a variable that contains code, so we can use another syntax to declare a function.  
-Use whichever one you're comfortable with.  
+(note that there's no semicolon at the end of a function declaration)
 
-```
-var aFunctionIsJustAVariableThatContainsCode = function() {
-	console.log("hello, I'm a function running a console.log() statement.");
+We can also create functions using a "function expression", where we create a
+function and bind it to a variable. When we do it this way, we typically don't give
+the function a name (after the word function and before the parameter list);
+this is called an "anonymous function".
+
+Here, we make an anonymous function using a function expression, and assign it
+to a new variable:
+
+```javascript
+
+var alsoAddsTwoNumbers = function (first, second) {
+    return first + second;
 };
-
-console.log(aFunctionIsJustAVariableThatContainsCode);
-aFunctionIsJustAVariableThatContainsCode();
-
-```
-Whenever you see `function(){}` - this is called a function literal. We can put it wherever we want a function to be.
-
-
-Javascript functions are special though, because they're secretly **objects** underneath.  
-
-```
-> function myFn() {console.log("hello")};
-undefined
-> myFn();
-hello
-undefined
-> myFn.description = "A function that prints hello";
-'A function that prints hello'
-> myFn
-{ [Function: myFn] description: 'A function that prints hello' };
-> myFn();
-hello
-undefined
-> myFn.description;
-'A function that prints hello'
 ```
 
-In Javascript, we can pass functions to other functions as arguments. This is a pretty neat trick, considering we have anonymous functions that can be defined in-place. Check this out:
+(note that there is a semicolon at the end of an assignment like this--after all,
+this is not all that different than 'var i = 7;', except with a function as
+the things-we're-assigning-to-the-variable.)
+
+Both of these create functions that do the same thing, so it's often a matter of
+style and taste which style you will you.
+
+Either you, you call them like this:
+
+```javascript
+
+addTwoNumbers(5, 10);        // --> 15
+alsoAddsTwoNumbers(5, 10);   // --> 15
+```
+
+In Javascript, we can pass functions to other functions as arguments.
 
 ```javascript
 
@@ -53,37 +51,69 @@ function batman(exclamation){
 	exclamation();
 }
 
-//And then, we can pass a function we have previously declared
+// And then, we can pass a function we have previously declared
 function obvious(){
 	console.log("Batman!");
 }
 
 batman(obvious);
+```
 
-//OR we can declare the function right there:
+The `obvious` function is called `exclamation` inside of the `batman` function, and
+when it gets called, it runs the code inside of `obvious`—printing "Batman!".
 
-batman(function(){ 
+You can do this with functions you separately defined, like that, but you can also use
+function expressions directly:
+
+
+```javascript
+
+function batman(exclamation){
+	console.log("NaNaNaNaNaNaNaNa");
+	exclamation();
+}
+
+batman(function () {
 	console.log("CAT MAN!");
 });
 ```
 
+This passes the newly-defined, anonymous function to the batman function. The
+result is the same, though—it calls that new function `exclamation` and then calls it,
+printing, in this case, "CAT MAN!".
+
+
 Python Functions
 ================
+
+In Python, we have one traditional way to create functions:
+
 ```python
-def a_function_that_adds_and_returns_the_value(first, second):
+def add_two_numbers(first, second):
 	return first + second
-
-a_function_that_adds_and_returns_the_value(5, 10)
-
-def a_function_is_just_a_variable_that_contains_code():
-	print "hello, I'm a function running a print statement."
-
-print a_function_is_just_a_variable_that_contains_code
-
 ```
-Python doesn't contain function literals, just functions declared the normal way. You can use them like they're variables though.
 
-In Javascript, we can pass functions to other functions as arguments. This is a pretty neat trick, considering we have anonymous functions that can be defined in-place. Check this out:
+We can call that function either using named parameters or positional parameters:
+
+```python
+add_two_numbers(5, 10)                 # --> 15
+
+add_two_numbers(first=5, second=10)    # --> 15
+```
+
+In Python, there's an analogous feature for creating function expressions, called
+"lambdas". Lambdas are functions that you create like an expression, but the syntax
+is a bit different:
+
+```python
+also_adds_two_numbers = lambda first, second: first + second
+```
+
+(Lambdas are less powerful than full functions, as they can have only a single
+expression as the body, and it's always returned. Therefore, they are not used
+for commonly).
+
+You can call a Python function and pass it another function, similar to Javascript:
 
 ```python
 
@@ -91,11 +121,8 @@ def batman(exclamation):
 	print "NaNaNaNaNaNaNaNa" 
 	exclamation()
 
-##And then, we can pass a function we have previously declared
 def obvious():
 	print "Batman!"
 
 batman(obvious)
-
-## But! We can't declare functions in place. So, no dice, CAT MAN.
 ```

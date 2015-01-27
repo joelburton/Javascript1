@@ -11,9 +11,36 @@ Some reference material to help you compare Python and JavaScript.
 
 ### Running your code
 
-For these exercises, you'll need to run your javascript files using website http://repl.it/languages/JavaScript.
+You can work on these exercises in one of two different ways:
+
+#### In an HTML Page
+
+You can create a basic HTML page with a Javascript section, and do your coding in there.
+This could look like:
+
+```html
+<!doctype html>
+<html>
+<head>
+  <title>Javascript Learning</title>
+</head>
+<body>
+
+  <script>
+    // Code goes here
+  </script>
+
+</body>
+</html>
+```
+
+#### In an online Javascript editor/runner
+
+You can do your coding and testing using http://repl.it/languages/JavaScript.
 
 ###Exercises###
+
+**Please stop and get a code review after EACH exercise.**
 
 Javascript Ex01 - [Sum of multiples of 3 and 5 under 1000](https://github.com/hackbrightacademy/Javascript1/blob/master/ex01.md)
 

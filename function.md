@@ -46,13 +46,13 @@ In Javascript, we can pass functions to other functions as arguments.
 
 ```javascript
 
-function batman(exclamation){
+function batman(exclamation) {
 	console.log("NaNaNaNaNaNaNaNa");
 	exclamation();
 }
 
 // And then, we can pass a function we have previously declared
-function obvious(){
+function obvious() {
 	console.log("Batman!");
 }
 
@@ -68,7 +68,7 @@ function expressions directly:
 
 ```javascript
 
-function batman(exclamation){
+function batman(exclamation) {
 	console.log("NaNaNaNaNaNaNaNa");
 	exclamation();
 }
@@ -81,6 +81,11 @@ batman(function () {
 This passes the newly-defined, anonymous function to the batman function. The
 result is the same, though—it calls that new function `exclamation` and then calls it,
 printing, in this case, "CAT MAN!".
+
+While creating function expressions and passing them into as parameters into other
+functions may seem confusing the first few times you see it, it's worthwhile to study
+this carefully—this is a common practice in Javascript, as scripts often use this
+technique.
 
 
 Python Functions

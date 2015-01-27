@@ -25,14 +25,16 @@ This could look like:
   <title>Javascript Learning</title>
 </head>
 <body>
-
+  <h1>Javascript Learning</h1>
   <script>
     // Code goes here
   </script>
-
 </body>
 </html>
 ```
+
+(if you do this, you'll need to show the Javascript console to see what you print to it—you
+can do that in Chrome with the `View`/`Developer` menu.)
 
 #### In an online Javascript editor/runner
 

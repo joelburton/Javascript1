@@ -171,7 +171,7 @@ phrase = "I have " + a_floating_point_number + " " + a_string
 # --> I have 5.5 cats.
 
 #  We can interpolate in python though
-phrase = "I have %d %s" % a_floating_point_number, a_string
+phrase = "I have %d %s" % (a_floating_point_number, a_string)
 
 
 # Empty types
@@ -180,14 +180,14 @@ phrase = "I have %d %s" % a_floating_point_number, a_string
 empty_on_purpose = None
 
 ## But it does not have an "undefined". If something is undefined:
->>> print empty_because_I_never_declared_it
-
-# We're going to get a NameError because python doesn't automatically handle it for us:
-"""
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-NameError: name 'empty_because_I_never_declared_it' is not defined
-"""
+##
+##   print empty_because_I_never_declared_it
+##
+## We're going to get a NameError because python doesn't automatically handle it for us:
+##
+## Traceback (most recent call last):
+##  File "<stdin>", line 1, in <module>
+## NameError: name 'empty_because_I_never_declared_it' is not defined
 
 # Boolean (true / false) values - Same but with caps
 
@@ -247,8 +247,8 @@ links_adventures = {
 print links_adventures['The Legend of Zelda']   # --> "NES"
 
 # You can do some sneaky extra stuff in Python because of the .keys() and the .values():
-print ("My experience on the " + " and the ".join(set(links_adventures.values())) +
-       " can be summed up as: " + " followed by ".join(links_adventures.keys()))
+print ( "My experience on the " + " and the ".join(set(links_adventures.values())) +
+        " can be summed up as: " + " followed by ".join(links_adventures) )
 
 ## (Explanation left as exercise to the reader, as a bonus)
 
@@ -257,8 +257,8 @@ print ("My experience on the " + " and the ".join(set(links_adventures.values())
 def print_crew():
 	print "Captain Jean Luc Picard is the only crew you need to know about."
 
-def warp(bearing, warpFactor):
-	print "Heading bearing " + str(bearing) + " at Warp Factor " + str(warpFactor)
+def warp(bearing, warp_factor):
+	print "Heading bearing " + str(bearing) + " at Warp Factor " + str(warp_factor)
 	
 enterprise = {
 	"print_crew": print_crew, 
@@ -280,8 +280,8 @@ class StarShip(object):
 	def print_crew(self):
 		print "Captain Jean Luc Picard is the only crew you need to know about."
 
-	def warp(self, bearing, warpFactor):
-		print "Heading bearing " + bearing + " at Warp Factor " + warpFactor
+	def warp(self, bearing, warp_factor):
+		print "Heading bearing " + bearing + " at Warp Factor " + str(warp_factor)
 
 enterprise = StarShip("enterprise", "NCC-1701-D", "1014")
 

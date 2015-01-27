@@ -23,7 +23,7 @@ Python Conditionals
 
 ```python
 age = 40;
-if age > 35:
+if age > 35
 	print "You can hold any public office!"
 elif age < 35 and age >= 30:
 	print "You can run for Senate!"
